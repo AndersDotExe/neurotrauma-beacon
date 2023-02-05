@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
+        <Item name="" identifier="EPSB">
+        </Item>
         <Item name="" identifier="autoinjectorheadset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
 
                 <PreferredContainer primary="medcab"/>
