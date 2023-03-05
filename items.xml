@@ -12,6 +12,17 @@
             <Price storeidentifier="merchantmine"/>
         </Price>
 
+        <Deconstruct time="15">
+            <Item identifier="copper" />
+            <Item identifier="plastic" amount="2" />
+        </Deconstruct>
+
+        <Fabricate suitablefabricators="fabricator" requiredtime="15">
+            <RequiredSkill identifier="mechanical" level="30" />
+            <RequiredItem identifier="fpgacircuit" amount="2"/>
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+
         <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
             <Containable items="mobilebattery">
                 <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
