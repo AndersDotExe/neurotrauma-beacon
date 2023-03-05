@@ -16,9 +16,10 @@
         <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
         <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="253,301,76,64" origin="0.35,0.5" />
         <Body radius="20" height="20" density="30" />
-        <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
 
+        <!-- Sound and light emitter -->
         <!-- Need to modify light and sound -->
+        <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
         <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
             <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
                 <RequiredItem items="mobilebattery" type="Contained" />
@@ -29,17 +30,21 @@
             </StatusEffect>
         </LightComponent>
 
+        <!-- Activation -->
+        <!-- Needs to activate on respiratory arrest OR cardiac arrest -->
+
+        <!-- decon and fab -->
         <Deconstruct time="15">
             <Item identifier="copper" amount="2"/>
             <Item identifier="plastic" amount="2" />
         </Deconstruct>
-
         <Fabricate suitablefabricators="fabricator" requiredtime="15">
             <RequiredSkill identifier="mechanical" level="30" />
             <RequiredItem identifier="fpgacircuit" amount="2"/>
             <RequiredItem identifier="plastic" />
         </Fabricate>
 
+        <!-- battery slot -->
         <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
             <Containable items="mobilebattery">
                 <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
