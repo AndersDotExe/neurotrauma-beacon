@@ -44,6 +44,9 @@
             <RequiredItem identifier="plastic" />
         </Fabricate>
 
+        <!-- Radio connection -->
+        <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+
         <!-- battery slot -->
         <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
             <Containable items="mobilebattery">
