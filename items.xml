@@ -15,6 +15,17 @@
         <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
         <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="253,301,76,64" origin="0.35,0.5" />
         <Body radius="20" height="20" density="30" />
+        <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
+
+        <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
+            <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
+                <RequiredItem items="mobilebattery" type="Contained" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
+                <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
+                <sound file="Content/Items/Weapons/SonarDecoy.ogg" range="500.0" loop="true" volume="0.25" />
+            </StatusEffect>
+        </LightComponent>
 
         <Deconstruct time="15">
             <Item identifier="copper" amount="2"/>
