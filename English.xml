@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+    <entityname.emergencybeacon>AEB Headset</entityname.emergencybeacon>
+    <entitydescription.emergencybeacon>Standard radio headset modified with an automated emergency sonar beacon. Monitors wearer's breathing and heart rate to automatically activate the beacon when the wearer enters cardiac or respiratory arrest.</entitydescription.emergencybeacon>
+</infotexts>
