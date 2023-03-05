@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
     <Item name="" identifier="emergencybeacon">
+
+        <PreferredContainer primary="divingcab"/>
+
+        <Price baseprice="240" sold="false">
+            <Price storeidentifier="merchantoutpost"/>
+            <Price storeidentifier="merchantcity" multiplier="0.9"/>
+            <Price storeidentifier="merchantresearch"/>
+            <Price storeidentifier="merchantmilitary"/>
+            <Price storeidentifier="merchantmine"/>
+        </Price>
+
         <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
             <Containable items="mobilebattery">
                 <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
