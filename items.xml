@@ -30,8 +30,10 @@
             </StatusEffect>
         </LightComponent>
 
-        <!-- ACTIVATION -->
+        <!-- BEACON - ACTIVATION -->
         <!-- Needs to activate on respiratory arrest OR cardiac arrest -->
+        <!-- Needs to deactivate on conditions cleared -->
+        <StatusEffect type="" targettype="This" IsOn="true"/>
 
         <Deconstruct time="15">
             <Item identifier="copper" amount="2"/>
@@ -54,6 +56,7 @@
         </ItemContainer>
 
         <!-- Placeholder, need to update path & add sprite -->
+        <!-- sprite idea: add red accent to drivers on vanilla headset? -->
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
             <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
         </Wearable>
