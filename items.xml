@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
         <Item name="" identifier="emergencybeacon">
+                <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+                        <Containable items="mobilebattery">
+                                <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+                        </Containable>
+                </ItemContainer>
+
                 <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
                         <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
                 </Wearable>
