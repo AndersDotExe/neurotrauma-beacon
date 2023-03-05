@@ -17,7 +17,7 @@
         <Body radius="20" height="20" density="30" />
 
         <Deconstruct time="15">
-            <Item identifier="copper" />
+            <Item identifier="copper" amount="2"/>
             <Item identifier="plastic" amount="2" />
         </Deconstruct>
 
