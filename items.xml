@@ -12,12 +12,12 @@
             <Price storeidentifier="merchantmine"/>
         </Price>
 
-        <!-- Placeholder, need to update path & sprite -->
+        <!-- Placeholder, need to update path & add sprite -->
         <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
         <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="253,301,76,64" origin="0.35,0.5" />
         <Body radius="20" height="20" density="30" />
 
-        <!-- Sound and light emitter -->
+        <!-- BEACON - SOUND AND LIGHT -->
         <!-- Need to modify light and sound -->
         <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
         <LightComponent LightColor="1.0,0.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
@@ -30,10 +30,9 @@
             </StatusEffect>
         </LightComponent>
 
-        <!-- Activation -->
+        <!-- ACTIVATION -->
         <!-- Needs to activate on respiratory arrest OR cardiac arrest -->
 
-        <!-- decon and fab -->
         <Deconstruct time="15">
             <Item identifier="copper" amount="2"/>
             <Item identifier="plastic" amount="2" />
@@ -44,7 +43,7 @@
             <RequiredItem identifier="plastic" />
         </Fabricate>
 
-        <!-- Radio connection -->
+        <!-- RADIO CONNECTION -->
         <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
 
         <!-- battery slot -->
@@ -54,7 +53,7 @@
             </Containable>
         </ItemContainer>
 
-        <!-- Placeholder, need to update path & sprite -->
+        <!-- Placeholder, need to update path & add sprite -->
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
             <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
         </Wearable>
