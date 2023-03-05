@@ -56,11 +56,12 @@
             <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
         </Wearable>
     </Item>
+</Items>
 
 
 
 <!-- Code copied for reference -->
-
+<!--
     <Item name="" identifier="sonarbeacon" category="Equipment" Tags="smallitem,sonar,provocative" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
         
         <PreferredContainer primary="divingcab" amount="1" spawnprobability="1" notcampaign="true"/>
@@ -158,4 +159,4 @@
             <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
         </Wearable>
     </Item>
-</Items>
+-->
