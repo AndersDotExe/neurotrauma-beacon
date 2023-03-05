@@ -20,7 +20,7 @@
         <!-- Sound and light emitter -->
         <!-- Need to modify light and sound -->
         <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
-        <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
+        <LightComponent LightColor="1.0,0.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false">
             <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
                 <RequiredItem items="mobilebattery" type="Contained" />
             </StatusEffect>
