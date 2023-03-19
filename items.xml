@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-    <Item name="" identifier="emergencybeacon">
+    <Item name="" identifier="emergencybeacon" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
 
         <PreferredContainer primary="divingcab"/>
 
@@ -13,8 +13,8 @@
         </Price>
 
         <!-- Placeholder, need to update path & add sprite -->
-        <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
-        <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="253,301,76,64" origin="0.35,0.5" />
+        <InventoryIcon texture="" sourcerect="0,0,0,0" origin="0.5,0.5" />
+        <Sprite name="Headset" texture="" depth="0.6" sourcerect="0,0,0,0" origin="0.35,0.5" />
         <Body radius="20" height="20" density="30" />
 
         <!-- BEACON - SOUND AND LIGHT -->
@@ -58,7 +58,7 @@
         <!-- Placeholder, need to update path & add sprite -->
         <!-- sprite idea: add red accent to drivers on vanilla headset? -->
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-            <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="253,305,76,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+            <sprite name="Headset Wearable" texture="" sourcerect="0,0,0,0" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
         </Wearable>
     </Item>
 </Items>
