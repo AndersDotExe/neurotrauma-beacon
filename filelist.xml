@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Neurotrauma-Beacon" modversion="0.3" corepackage="False" steamworkshopid="" gameversion="0.18.15.0">
-    <Item file="%ModDir%/items.xml" />
-    <Text file="%ModDir%/English.xml" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Neurotrauma-Beacon" modversion="0.3" corepackage="False" steamworkshopid="2949012846" gameversion="1.0.8.0">
+  <Item file="%ModDir%/items.xml" />
+  <Text file="%ModDir%/English.xml" />
 </contentpackage>
