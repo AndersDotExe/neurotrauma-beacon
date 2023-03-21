@@ -26,7 +26,7 @@
             </StatusEffect>
             <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
                 <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
-                <sound file="Content/Items/Weapons/SonarDecoy.ogg" range="500.0" loop="true" volume="0.25" />
+                <sound file="" range="500.0" loop="true" volume="0.25" />
             </StatusEffect>
         </LightComponent>
 
